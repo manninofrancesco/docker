@@ -1,0 +1,9 @@
+#Fornito da Docker foundation anche se il top di gamma è Kubernetes
+#services sono i container da avviare
+services:
+  mysql:
+    image: mysql:latest
+  app:
+    build: .
+    volumes:
+      - .:/app
